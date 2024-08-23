@@ -14,9 +14,21 @@ const projects = [
 ];
 
 const historyItems = [
-  { date: "Nov 15, 3:52 PM", name: "Tomas Baker", img: "/profile4.png" },
-  { date: "Nov 15, 1:22 PM", name: "Tomas Baker", img: "/profile4.png" },
-  { date: "Nov 14, 5:45 PM", name: "Tomas Baker", img: "/profile4.png" },
+  {
+    date: "Nov 15, 3:52 PM",
+    name: "Tomas Baker",
+    img: "/generate/profile4.png",
+  },
+  {
+    date: "Nov 15, 1:22 PM",
+    name: "Tomas Baker",
+    img: "/generate/profile4.png",
+  },
+  {
+    date: "Nov 14, 5:45 PM",
+    name: "Tomas Baker",
+    img: "/generate/profile4.png",
+  },
 ];
 
 const GenerateLeftSide = () => {

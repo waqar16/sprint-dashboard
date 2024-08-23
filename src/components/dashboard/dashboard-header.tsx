@@ -76,7 +76,7 @@ const DashboardHeader = () => {
           <p className="text-sm">baker@tomas.com</p>
         </div>
         <Image
-          src={"/profile3.png"}
+          src={"/generate/profile3.png"}
           width={130}
           height={130}
           alt="logo"
