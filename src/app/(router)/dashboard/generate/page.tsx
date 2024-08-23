@@ -33,7 +33,7 @@ const GeneratePage = () => {
       {/* LeftSideBar */}
       <GenerateLeftSide />
       {/* center*/}
-      <div className="h-full flex-1 overflow-y-auto">
+      <div className="h-full flex-1 overflow-y-auto hide-scrollbar">
         {/* SVG Icons Section */}
         <div className="bg-[#0E142D] border border-[#1C2037] rounded-2xl px-8 py-5">
           {/* download tab */}
