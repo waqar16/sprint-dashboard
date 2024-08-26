@@ -50,8 +50,8 @@ const GeneratePage = () => {
             </div>
           </div>
           {/* icons show */}
-          <div className="w-[50%] mx-auto bg-[#1C2038] rounded-lg py-2 mt-6">
-            <div className="w-[60%] mx-auto flex flex-wrap gap-6">
+          <div className="w-[250px] xl:w-[350px] 3xl:w-[500px] mx-auto flex items-center justify-center bg-[#1C2038] rounded-lg py-4 mt-6">
+            <div className=" w-[200px] xl:w-[300px] 2l:w-[400px] grid grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
               {ICONS.map((url, i) => (
                 <Image
                   key={i}
@@ -59,7 +59,7 @@ const GeneratePage = () => {
                   width={300}
                   height={300}
                   alt="svg"
-                  className="w-14 h-14"
+                  className="w-14 h-14 border"
                 />
               ))}
             </div>

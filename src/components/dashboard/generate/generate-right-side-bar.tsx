@@ -37,7 +37,7 @@ const GenerateRightSideBar = () => {
   };
 
   return (
-    <div className="h-full w-96 bg-[#080e28] text-white rounded-tl-[24px] p-5">
+    <div className="h-full w-80 xl:w-96 bg-[#080e28] text-white rounded-tl-[24px] p-5">
       {/* color picker tab */}
       <div className="bg-colorPicker-gradient border  border-[#1C2037] rounded-2xl p-5">
         {/* color picker */}
@@ -138,7 +138,7 @@ const GenerateRightSideBar = () => {
         </Button>
       </div>
       {/* footer */}
-      <p className="text-sm text-[#BAC0DD] text-center mt-3">
+      <p className="lg:hidden xl:block text-sm text-[#BAC0DD] text-center mt-3">
         You have available 8 credits
       </p>
     </div>

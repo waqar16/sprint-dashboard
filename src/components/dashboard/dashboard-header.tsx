@@ -50,7 +50,7 @@ const DashboardHeader = () => {
       <Image src={"/logo.png"} width={130} height={130} alt="logo" />
 
       {/* links */}
-      <div className="flex gap-32">
+      <div className="flex gap-5 xl:gap-14 3xl:gap-32">
         {TABS.map((tab, index) => {
           return (
             <Link
@@ -72,15 +72,17 @@ const DashboardHeader = () => {
       <div className="flex items-center gap-3">
         <div className="text-white">
           {/* name */}
-          <h3 className="text-sm font-bold text-end">Tomas Baker</h3>
-          <p className="text-sm">baker@tomas.com</p>
+          <h3 className="text-xs 2xl:text-sm font-bold text-end">
+            Tomas Baker
+          </h3>
+          <p className="text-xs 2xl:text-sm">baker@tomas.com</p>
         </div>
         <Image
           src={"/generate/profile3.png"}
           width={130}
           height={130}
           alt="logo"
-          className="w-10 h-10 rounded-full object-cover"
+          className="w-8 h-8 3xl:w-10 3xl:h-10 rounded-full object-cover"
         />
         <ChevronDown className="text-white" />
       </div>

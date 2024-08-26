@@ -62,7 +62,7 @@ const GenerateLeftSide = () => {
   }, [showMoreHistory]);
 
   return (
-    <div className="w-96 h-full bg-[#080e28] border-r border-t border-[#1C2037] text-white rounded-tr-[24px]">
+    <div className="w-80 xl:w-96 h-full bg-[#080e28] border-r border-t border-[#1C2037] text-white rounded-tr-[24px]">
       {/* Search Bar */}
       <div className="flex items-center gap-2 border-b border-[#1C2037] px-10 py-3">
         <Search className="w-8 h-auto text-[#7C7F99]" />
