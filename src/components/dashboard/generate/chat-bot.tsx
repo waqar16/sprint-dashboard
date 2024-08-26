@@ -69,7 +69,7 @@ const ChatBot = () => {
   ]);
 
   return (
-    <div className="bg-chatbot-gradient border-t border-[#1C2037] rounded-2xl px-8 py-5 mt-5">
+    <div className="bg-chatbot-gradient border border-[#1C2037] rounded-2xl px-8 py-5 mt-5">
       {/* messages */}
       <div className="h-[300px] space-y-5  overflow-y-auto custom-scrollbar">
         {messages.map((msg) => (

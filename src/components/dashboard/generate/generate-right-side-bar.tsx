@@ -37,7 +37,7 @@ const GenerateRightSideBar = () => {
   };
 
   return (
-    <div className="h-full w-80 xl:w-96 bg-[#080e28] text-white rounded-tl-[24px] p-4 xl:p-5">
+    <div className="h-full w-72 xl:w-80 2xl:w-96 bg-[#080e28] text-white rounded-tl-[24px] p-4 xl:p-5 overflow-y-auto hide-scrollbar">
       {/* color picker tab */}
       <div className="bg-colorPicker-gradient border  border-[#1C2037] rounded-2xl p-3 xl:p-5">
         {/* color picker */}
@@ -45,7 +45,7 @@ const GenerateRightSideBar = () => {
 
         {/* select style */}
         <div className="flex items-center justify-between mt-7">
-          <h1 className="text-base text-[#BAC0DD] ">Select colors</h1>
+          <h1 className="text-base text-[#BAC0DD] ">Select Style</h1>
           <ChevronDown />
         </div>
 
@@ -56,10 +56,10 @@ const GenerateRightSideBar = () => {
             {STAR_ICON.map(({ text, icon }, i) => (
               <div
                 key={i}
-                className="flex gap-2 bg-[#1C223F] rounded-3xl px-4 py-2"
+                className="flex gap-1 bg-[#1C223F] rounded-3xl px-3 2xl:px-4 py-2"
               >
                 {icon}
-                <span className="text-xs xl:text-sm text-white">{text}</span>
+                <span className="text-xs 2xl:text-sm text-white">{text}</span>
               </div>
             ))}
           </div>
@@ -89,7 +89,7 @@ const GenerateRightSideBar = () => {
         </div>
 
         {/* add link tab  */}
-        <div className="flex gap-4 items-center  bg-link-added-gradient border border-[#32344A] rounded-lg mx-6 py-1 xl:py-2 px-5">
+        <div className="flex gap-4 items-center  bg-link-added-gradient border border-[#32344A] rounded-lg mx-6 py-1 2xl:py-2 px-5">
           <Input
             type="url"
             placeholder="Add file URL"
@@ -133,7 +133,7 @@ const GenerateRightSideBar = () => {
 
       {/* submit button */}
       <div className="px-4 mt-7">
-        <Button className="text-base w-full h-10 xl:h-12 bg-generate-button-gradient">
+        <Button className="text-base w-full h-10 2xl:h-12 bg-generate-button-gradient">
           Generate
         </Button>
       </div>

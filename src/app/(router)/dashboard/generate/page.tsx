@@ -33,7 +33,7 @@ const GeneratePage = () => {
       {/* LeftSideBar */}
       <GenerateLeftSide />
       {/* center*/}
-      <div className="h-full flex-1 overflow-y-auto hide-scrollbar">
+      <div className="h-full flex-1 overflow-y-auto hide-scrollbar pb-10">
         {/* SVG Icons Section */}
         <div className="bg-[#0E142D] border border-[#1C2037] rounded-2xl px-8 py-5">
           {/* download tab */}
@@ -50,8 +50,8 @@ const GeneratePage = () => {
             </div>
           </div>
           {/* icons show */}
-          <div className="w-[250px] xl:w-[350px] 3xl:w-[500px] mx-auto flex items-center justify-center bg-[#1C2038] rounded-lg py-4 mt-6">
-            <div className=" w-[200px] xl:w-[300px] 2l:w-[400px] grid grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
+          <div className="w-[280px] xl:w-[500px] 3xl:w-[700px] mx-auto flex items-center justify-center bg-[#1C2038] rounded-lg py-4 3xl:py-7 mt-6">
+            <div className=" w-[250px] xl:w-[300px] 2xl:w-[400px] grid grid-cols-4 xl:grid-cols-4 gap-0 xl:gap-4 3xl:gap-6">
               {ICONS.map((url, i) => (
                 <Image
                   key={i}

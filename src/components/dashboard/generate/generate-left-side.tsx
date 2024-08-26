@@ -62,7 +62,7 @@ const GenerateLeftSide = () => {
   }, [showMoreHistory]);
 
   return (
-    <div className="w-80 xl:w-96 h-full bg-[#080e28] border-r border-t border-[#1C2037] text-white rounded-tr-[24px]">
+    <div className="w-72 xl:w-80 2xl:w-96 h-full overflow-y-auto hide-scrollbar bg-[#080e28] border-r border-t border-[#1C2037] text-white rounded-tr-[24px]">
       {/* Search Bar */}
       <div className="flex items-center gap-2 border-b border-[#1C2037] px-10 py-2 xl:py-3">
         <Search className="w-8 h-auto text-[#7C7F99]" />
@@ -107,7 +107,7 @@ const GenerateLeftSide = () => {
             ))}
           </ul>
         </div>
-        <div className="flex justify-center px-16">
+        <div className="flex justify-center">
           <Button
             onClick={handleShowMoreProjects}
             className="flex gap-3 text-white bg-transparent hover:bg-[#22263e] 2xl:mt-2"
@@ -161,7 +161,7 @@ const GenerateLeftSide = () => {
               </div>
             ))}
         </div>
-        <div className="flex justify-start px-16">
+        <div className="flex justify-center">
           <Button
             onClick={handleShowMoreHistory}
             className="flex gap-3 text-white bg-transparent hover:bg-[#22263e] mt-2"
@@ -178,7 +178,7 @@ const GenerateLeftSide = () => {
       </div>
 
       {/* create new button */}
-      <div className="px-6">
+      <div className="px-6 pb-10">
         <Button
           variant="outline"
           className="w-full h-10 xl:h-12 text-sm xl:text-base text-[#5bbf9d] hover:bg-[#5bbf9d] tracking-[1px] flex items-center gap-2 bg-transparent border border-[#5bbf9d]"
