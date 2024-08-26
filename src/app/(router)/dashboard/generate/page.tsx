@@ -59,7 +59,7 @@ const GeneratePage = () => {
                   width={300}
                   height={300}
                   alt="svg"
-                  className="w-14 h-14 border"
+                  className="w-14 h-14"
                 />
               ))}
             </div>
