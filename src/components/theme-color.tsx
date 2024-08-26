@@ -53,7 +53,7 @@ const ThemeColor: React.FC<ThemeColorProps> = ({
       <h1 className="text-base text-[#BAC0DD] " style={{ color: themeColor }}>
         Select colors
       </h1>
-      <div className="flex justify-between mt-3">
+      <div className="flex justify-between mt-2 xl:mt-3">
         {/* default color */}
         <div className="flex gap-2">
           {defaultColor.map((color, i) => (
@@ -61,7 +61,7 @@ const ThemeColor: React.FC<ThemeColorProps> = ({
               key={i}
               //   bg={color}
               className={cn(
-                "w-8 bg-white h-8 rounded-full cursor-pointer"
+                "w-6 xl:w-8 h-6 xl:h-8 bg-white  rounded-full cursor-pointer"
                 // `bg-[${color}]`
               )}
               style={{
@@ -79,7 +79,7 @@ const ThemeColor: React.FC<ThemeColorProps> = ({
             width={40}
             height={40}
             alt="colorSvg"
-            className="w-8 h-auto cursor-pointer"
+            className="w-6 xl:w-8 h-auto cursor-pointer"
             onClick={() => setIsColorPicker(!isColorPicker)}
           />
 

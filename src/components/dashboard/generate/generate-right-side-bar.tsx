@@ -37,9 +37,9 @@ const GenerateRightSideBar = () => {
   };
 
   return (
-    <div className="h-full w-80 xl:w-96 bg-[#080e28] text-white rounded-tl-[24px] p-5">
+    <div className="h-full w-80 xl:w-96 bg-[#080e28] text-white rounded-tl-[24px] p-4 xl:p-5">
       {/* color picker tab */}
-      <div className="bg-colorPicker-gradient border  border-[#1C2037] rounded-2xl p-5">
+      <div className="bg-colorPicker-gradient border  border-[#1C2037] rounded-2xl p-3 xl:p-5">
         {/* color picker */}
         <ThemeColor setThemeColor={setThemeColor} themeColor={themeColor} />
 
@@ -50,7 +50,7 @@ const GenerateRightSideBar = () => {
         </div>
 
         {/* select style */}
-        <div className="mt-7">
+        <div className="mt-5 xl:mt-7">
           <h1 className="text-base text-[#BAC0DD]">Select shape</h1>
           <div className="flex flex-wrap gap-3 mt-2">
             {STAR_ICON.map(({ text, icon }, i) => (
@@ -59,7 +59,7 @@ const GenerateRightSideBar = () => {
                 className="flex gap-2 bg-[#1C223F] rounded-3xl px-4 py-2"
               >
                 {icon}
-                <span className="text-sm text-white">{text}</span>
+                <span className="text-xs xl:text-sm text-white">{text}</span>
               </div>
             ))}
           </div>
@@ -89,7 +89,7 @@ const GenerateRightSideBar = () => {
         </div>
 
         {/* add link tab  */}
-        <div className="flex gap-4 items-center  bg-link-added-gradient border border-[#32344A] rounded-lg mx-6 py-2 px-5">
+        <div className="flex gap-4 items-center  bg-link-added-gradient border border-[#32344A] rounded-lg mx-6 py-1 xl:py-2 px-5">
           <Input
             type="url"
             placeholder="Add file URL"
@@ -133,7 +133,7 @@ const GenerateRightSideBar = () => {
 
       {/* submit button */}
       <div className="px-4 mt-7">
-        <Button className="text-base w-full h-12 bg-generate-button-gradient">
+        <Button className="text-base w-full h-10 xl:h-12 bg-generate-button-gradient">
           Generate
         </Button>
       </div>
